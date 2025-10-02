@@ -1,2 +1,2 @@
 # Apartment-Esport-Bot
-Esport Bot for reminder matches.
+Esports live alerts discord bot 
