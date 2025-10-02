@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  esports-live-bot:
+    build: .
+    container_name: esports-live-bot
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - DISCORD_CHANNEL_ID=${DISCORD_CHANNEL_ID}
+      - RIOT_API_KEY=${RIOT_API_KEY}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS}
+      - ROLE_PINGS_CS2=${ROLE_PINGS_CS2}
+      - ROLE_PINGS_VALORANT=${ROLE_PINGS_VALORANT}
+      - ROLE_PINGS_LOL=${ROLE_PINGS_LOL}
+      - STATE_FILE_PATH=/data/state.json
+    volumes:
+      - esports-bot-data:/data
+    networks:
+      - default
+volumes:
+  esports-bot-data:
