@@ -1,0 +1,16 @@
+{
+  "name": "esports-live-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.0",
+    "hltv": "^3.6.6",
+    "node-fetch": "^3.3.2",
+    "vlr-api": "^2.2.0"
+  }
+}
